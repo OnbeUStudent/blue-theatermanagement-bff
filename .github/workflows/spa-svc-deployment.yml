@@ -10,8 +10,8 @@ on:
   workflow_dispatch:
 
 env:
-  APP_NAME: Dii_TheaterManagement_Spa
-  PACT_PACTICIPANT: blue-theatermanagement-spa
+  APP_NAME: Dii_TheaterManagement_Bff
+  PACT_PACTICIPANT: blue-theatermanagement-bff
 jobs:
   build:
     name: Deployment Pipeline
