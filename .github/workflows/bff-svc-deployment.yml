@@ -12,7 +12,7 @@ on:
 env:
   APP_NAME: Dii_TheaterManagement_Bff
   PACT_PACTICIPANT: blue-theatermanagement-bff
-  VERIFY_PROVIDER_PACT: 'false'
+  VERIFY_PROVIDER_PACT: 'true'
 
 jobs:
   build:
