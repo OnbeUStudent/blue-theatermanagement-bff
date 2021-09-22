@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Dii_TheaterManagement_Bff.PactConsumer.Tests.DiiOrderingSvc
 {
-  
+
     // This class is responsible for setting up a shared
     // mock server for Pact used by all the tests.
     // XUnit can use a Class Fixture for this.
@@ -33,8 +33,8 @@ namespace Dii_TheaterManagement_Bff.PactConsumer.Tests.DiiOrderingSvc
 
             PactBuilder = new PactBuilder(pactConfig);
 
-            PactBuilder.ServiceConsumer("white-theatermanagement-bff")
-                       .HasPactWith("white-ordering-svc");
+            PactBuilder.ServiceConsumer("blue-theatermanagement-bff")
+                       .HasPactWith("blue-ordering-svc");
 
             MockProviderService = PactBuilder.MockService(MockServerPort);
         }

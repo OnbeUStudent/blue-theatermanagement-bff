@@ -4,13 +4,8 @@ using PactNet.Infrastructure.Outputters;
 using PactTestingTools;
 using System;
 using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xunit;
 using Xunit.Abstractions;
-using Dii_TheaterManagement_Bff.PactProvider;
 
 namespace Dii_TheaterManagement_Bff.PactProvider.Tests
 {
@@ -22,7 +17,7 @@ namespace Dii_TheaterManagement_Bff.PactProvider.Tests
         private readonly CustomWebApplicationFactory<Startup> _factory;
         private readonly WebApplicationFactory<Dii_OrderingSvc.Fake.Startup> _orderServiceFakeFactory;
         private readonly PactVerifierConfig pactVerifierConfig;
-        private const string providerId = "white-theatermanagement-bff";
+        private const string providerId = "blue-theatermanagement-bff";
         public DiiTheaterManagementBffProviderPactTests(ITestOutputHelper testOutputHelper,
             CustomWebApplicationFactory<Startup> factory
             , WebApplicationFactory<Dii_OrderingSvc.Fake.Startup> orderServiceFakeFactory)
@@ -46,7 +41,7 @@ namespace Dii_TheaterManagement_Bff.PactProvider.Tests
         {
 
             // Arrange
-            string consumerId = "white-theatermanagement-web";
+            string consumerId = "blue-theatermanagement-web";
 
             //Act / Assert
             var httpClientForInMemoryInstanceOfApp = _factory.CreateClient();
@@ -73,7 +68,7 @@ namespace Dii_TheaterManagement_Bff.PactProvider.Tests
         [Fact]
         public void HonorPactWithSpa()
         {
-            string consumerId = "white-theatermanagement-spa";
+            string consumerId = "blue-theatermanagement-spa";
 
 
             var httpClientForInMemoryInstanceOfApp = _factory.CreateClient();

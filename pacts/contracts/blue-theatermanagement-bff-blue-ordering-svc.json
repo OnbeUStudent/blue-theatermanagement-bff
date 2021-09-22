@@ -1,9 +1,9 @@
 {
   "consumer": {
-    "name": "dii-theatermanagement-bff"
+    "name": "blue-theatermanagement-bff"
   },
   "provider": {
-    "name": "dii-ordering-svc"
+    "name": "blue-ordering-svc"
   },
   "interactions": [
     {
@@ -20,7 +20,7 @@
         },
         "body": [
           {
-            "MovieId": 1,
+            "MovieId": "b542eea0-b048-467b-8c7c-c581434bc541",
             "Title": "Example Movie"
           }
         ],
