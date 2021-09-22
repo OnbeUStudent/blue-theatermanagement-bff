@@ -4,7 +4,7 @@ using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
 
-namespace Dii_TheaterManagement_Bff.Clients
+namespace Dii_TheaterManagement_Bff.Clients.MovieCatalogSvc
 {
     public class MovieCatalogSvcClient
     {

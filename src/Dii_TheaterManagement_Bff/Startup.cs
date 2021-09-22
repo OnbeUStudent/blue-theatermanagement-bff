@@ -6,6 +6,7 @@ using System.Net.Http;
 using System.Threading.Tasks;
 using Dapr.Client;
 using Dii_TheaterManagement_Bff.Clients;
+using Dii_TheaterManagement_Bff.Clients.MovieCatalogSvc;
 using Dii_TheaterManagement_Bff.Features.FakeUsers;
 using Dii_TheaterManagement_Bff.Features.SyntheticBehavior;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
